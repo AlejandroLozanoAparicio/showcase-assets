@@ -3,12 +3,22 @@ import styles from './ImageShowcaser.module.scss'
 
 type ImageShowcaserProps = { images: string[] }
 
+const MAX_VISIBLE_IMAGES = 12
+const SIZES_MEDIA_QUERY =
+  '(min-width: 1024px) 25vw, (min-width: 600px) 33vw, 50vw'
+
 export const ImageShowcaser = ({ images }: ImageShowcaserProps) => {
   return (
     <div className={styles.container}>
-      {images.map((imageUrl) => (
-        <div className={styles.imageContainer}>
-          <Image fill alt='' src={imageUrl} key={imageUrl} />
+      {images.map((imageUrl, index) => (
+        <div className={styles.imageContainer} key={imageUrl}>
+          <Image
+            fill
+            alt=''
+            src={imageUrl}
+            priority={index <= MAX_VISIBLE_IMAGES}
+            sizes={SIZES_MEDIA_QUERY}
+          />
         </div>
       ))}
     </div>
