@@ -1,7 +1,7 @@
-import Image from 'next/image';
-import styles from './ImageShowcaser.module.scss';
+import Image from 'next/image'
+import styles from './ImageShowcaser.module.scss'
 
-type ImageShowcaserProps = { images: string[] };
+type ImageShowcaserProps = { images: string[] }
 
 export const ImageShowcaser = ({ images }: ImageShowcaserProps) => {
   return (
@@ -9,7 +9,7 @@ export const ImageShowcaser = ({ images }: ImageShowcaserProps) => {
       {images.map((imageUrl) => (
         <Image
           src={imageUrl}
-          alt=""
+          alt=''
           className={styles.image}
           width={100}
           height={100}
@@ -17,5 +17,5 @@ export const ImageShowcaser = ({ images }: ImageShowcaserProps) => {
         />
       ))}
     </div>
-  );
-};
+  )
+}

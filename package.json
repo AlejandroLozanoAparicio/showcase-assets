@@ -3,7 +3,8 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev",
-    "start": "next start"
+    "start": "next start",
+    "format": "prettier --check --ignore-path .gitignore ."
   },
   "dependencies": {
     "@supabase/ssr": "latest",
@@ -16,7 +17,7 @@
     "typescript": "^5.7.2"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=v20"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
