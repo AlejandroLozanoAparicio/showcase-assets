@@ -1,0 +1,16 @@
+@use 'styles/colors';
+@use 'styles/sizes';
+
+.container {
+  min-height: 100dvh;
+  padding: 24px;
+  background-color: colors.$dark-base;
+
+  @media (sizes.$medium) {
+    padding: 60px 80px;
+  }
+
+  @media (sizes.$large) {
+    padding: 80px 120px;
+  }
+}
