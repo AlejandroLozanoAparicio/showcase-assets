@@ -5,7 +5,7 @@ type ImageShowcaserProps = { images: string[] }
 
 const MAX_VISIBLE_IMAGES = 12
 const SIZES_MEDIA_QUERY =
-  '(min-width: 1024px) 25vw, (min-width: 600px) 33vw, 50vw'
+  '(min-width: 1024px) 21vw, (min-width: 600px) 26vw, 43vw'
 
 export const ImageShowcaser = ({ images }: ImageShowcaserProps) => {
   return (
