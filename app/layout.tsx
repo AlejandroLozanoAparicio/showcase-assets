@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import './global.css'
 
 export default async function RootLayout({
   children,

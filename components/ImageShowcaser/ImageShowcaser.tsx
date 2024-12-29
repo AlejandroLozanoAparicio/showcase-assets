@@ -7,14 +7,9 @@ export const ImageShowcaser = ({ images }: ImageShowcaserProps) => {
   return (
     <div className={styles.container}>
       {images.map((imageUrl) => (
-        <Image
-          src={imageUrl}
-          alt=''
-          className={styles.image}
-          width={100}
-          height={100}
-          key={imageUrl}
-        />
+        <div className={styles.imageContainer}>
+          <Image fill alt='' src={imageUrl} key={imageUrl} />
+        </div>
       ))}
     </div>
   )
