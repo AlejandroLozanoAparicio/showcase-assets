@@ -4,7 +4,7 @@
     "build": "next build",
     "dev": "next dev",
     "start": "next start",
-    "format": "prettier --check --ignore-path .gitignore ."
+    "lint": "prettier --check --ignore-path .gitignore ."
   },
   "dependencies": {
     "@supabase/ssr": "latest",
